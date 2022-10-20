@@ -15,10 +15,10 @@ from PyroKar import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
 from PyroKar.helpers.misc import create_botlog, git, heroku
 
 MSG_ON = """
-💢 **PyroKar-Userbot Udah Aktif** 💢
+💢 **Amang-Userbot Aktif NGENTOD!!** 💢
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-❍▹ **Userbot Version -** `{}`
-❍▹ **Ketik** `{}alive` **untuk Mengecheck Bot**
+❍▹ **VERSI KENTOT -** `{}`
+❍▹ **Ketik** `{}alive` **untuk Mengecheck KENTOT**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
@@ -33,6 +33,7 @@ async def main():
             await bot.join_chat("Karc0de")
             await bot.join_chat("Lunatic0de")
             await bot.join_chat("SharingUserbot")
+            await bot.join_chat("amanqss")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
@@ -44,7 +45,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("PyroKar").info(f"PyroKar-UserBot v{BOT_VER} [👑 BERHASIL DIAKTIFKAN YA KONTOL! 👑]")
+    LOGGER("PyroKar").info(f"Amang-UserBot v{BOT_VER} [👑 BERHASIL DIAKTIFKAN YA KONTOL! 👑]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -52,7 +53,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("PyroKar").info("Starting PyroKar-UserBot")
+    LOGGER("PyroKar").info("Starting Amang-UserBot")
     install()
     git()
     heroku()
